@@ -1,13 +1,13 @@
-import React from 'react';
+import React from "react";
 
-import SearchButton from '../components/SearchButton/SearchButton';
+import SearchButton from "../components/SearchButton/SearchButton";
 
 export default {
-  title: 'SearchButton',
+  title: "SearchButton",
   component: SearchButton,
   parameters: {
     // More on Story layout: https://storybook.js.org/docs/react/configure/story-layout
-    layout: 'fullscreen',
+    layout: "fullscreen",
   },
 };
 
