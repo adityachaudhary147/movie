@@ -1,0 +1,15 @@
+*{
+  margin: 0;
+  font-family:sans-serif;
+}
+
+.flex-cards{
+  display: grid;
+  grid-template-columns: 1fr ;
+  
+  justify-content: center;
+  align-content: center;
+}
+body{
+  background-color: #282828;
+}

@@ -1,0 +1,56 @@
+{
+  "name": "lib-movies",
+  "version": "1.0.0",
+  "description": "movies library using odbapi",
+  "main": "dist/index.js",
+  "typings": "dist/index.js",
+  "module": "./dist/index.es.js",
+  "scripts": {
+    "test": "jest",
+    "build-lib": "rollup -c -e react,react-dom,React,ReactDOM",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "author": "aditya",
+  "license": "MIT",
+  "devdependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-react": "^7.12.10",
+    "@rollup/plugin-node-resolve": "^11.1.1",
+    "@storybook/addon-actions": "^6.1.16",
+    "@storybook/addon-essentials": "^6.1.16",
+    "@storybook/addon-links": "^6.1.16",
+    "@storybook/react": "^6.1.16",
+    "babel-loader": "^8.2.2",
+    "rollup": "^2.38.4",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.0",
+    "rollup-plugin-terser": "^7.0.2"
+  },
+  "dependencies": {
+    "@rollup/plugin-node-resolve": "^11.1.1",
+    "@storybook/addon-actions": "^6.1.16",
+    "@storybook/addon-essentials": "^6.1.16",
+    "@storybook/addon-links": "^6.1.16",
+    "@storybook/react": "^6.1.16",
+    "babel-loader": "^8.2.2",
+    "rollup": "^2.69.0",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "storybook": "^6.4.19"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.5",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "@babel/preset-typescript": "^7.16.7",
+    "@testing-library/react": "^12.1.3",
+    "@types/jest": "^27.4.1",
+    "babel-jest": "^27.5.1",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^27.5.1"
+  }
+}

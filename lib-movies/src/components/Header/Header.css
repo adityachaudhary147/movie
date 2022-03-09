@@ -1,0 +1,18 @@
+.head{
+    background-color: black;
+    height: 54px;
+    color: whitesmoke;
+    font-size: large;
+    font-weight: 900;
+}
+
+.flex-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+    text-decoration: none;
+    list-style: none;
+    padding-top: 13px;
+}
+

@@ -1,0 +1,51 @@
+
+.card{
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+    position: relative;
+    border: 3px solid #ff565A;
+    background-color: #4B4B4B;
+    border-radius: 15px;
+    color:whitesmoke;
+    transition: transform 500ms;
+
+}
+.poster{
+    width: 100%;
+    /* margin: auto; */
+}
+.hidden{
+    display: none;
+}
+.info{
+    position:relative;
+}
+.container{
+    width: 70%;
+    margin: auto;
+    margin-top: 15px;
+    
+}
+.card:hover {
+    transform: scale(1.2);
+  z-index: 1;
+   
+}
+.linkimdb{
+    color: #008488;
+
+text-decoration: none;
+}
+.lingimdb :hover{
+    color: #008488;
+    cursor: pointer;
+}
+.linkimdb :active{
+    color: #008488;
+}
+.linkimdb :visited{
+    color: #008488;
+}
