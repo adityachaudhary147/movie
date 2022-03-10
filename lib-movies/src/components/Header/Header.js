@@ -1,17 +1,19 @@
-import React from 'react'
+import React from "react";
 import "./Header.css";
-function Header(props) {
+import PropTypes from 'prop-types';
+function Header({ label }) {
   return (
-    <div className='head'>
-        <nav className='nav'>
-          <ul className='flex-list'>
-            <li>Movie Data Base Search</li>
-          </ul>
-            
-        </nav>
+    <div className="head">
+      <nav className="nav">
+        <ul className="flex-list">
+          <li>{label}</li>
+        </ul>
+      </nav>
     </div>
-  )
+  );
 }
 
-
-export default Header
+Header.propTypes = {
+  label: PropTypes.string
+};
+export default Header;

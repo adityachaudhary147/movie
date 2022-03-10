@@ -13,3 +13,6 @@ export default {
 
 const Template = (args) => <SearchButton {...args} />;
 export const Default = Template.bind({});
+Default.args={
+  label:"press me"
+}

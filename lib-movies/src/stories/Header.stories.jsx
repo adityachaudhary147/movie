@@ -13,3 +13,4 @@ export default {
 
 const Template = (args) => <Header {...args} />;
 export const Default = Template.bind({});
+Default.args={label:"This is the Header Text"};

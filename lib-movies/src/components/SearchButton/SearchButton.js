@@ -1,10 +1,16 @@
-import React from 'react'
-import './SearchButton.css'
-function SearchButton({handleSearch,props,label}) {
+import React from "react";
+import "./SearchButton.css";
+import PropTypes from "prop-types";
+function SearchButton({ handleSearch, label }) {
   return (
-    <button onClick={handleSearch} className='btn-search'>{label}</button>
-  )
+    <button onClick={handleSearch} className="btn-search">
+      {label}
+    </button>
+  );
 }
 
-
-export default SearchButton
+SearchButton.propTypes = {
+  handleSearch: PropTypes.func,
+  label: PropTypes.string,
+};
+export default SearchButton;

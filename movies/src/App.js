@@ -1,16 +1,12 @@
+import "./App.css";
+import { Header } from "lib-movies";
 
-import './App.css';
-import  { Header,Card} from 'lib-movies';
-
-import SearchPage from './Components/SearchPage';
+import SearchPage from "./Components/SearchPage";
 function App() {
-
   return (
     <>
-    <Header ></Header> 
-    <SearchPage></SearchPage>
-    
-   
+      <Header label={"Movie Data Base Search"}></Header>
+      <SearchPage></SearchPage>
     </>
   );
 }

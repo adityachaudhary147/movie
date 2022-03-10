@@ -20,7 +20,7 @@ beforeEach(() => {
   container = document.createElement("div");
   document.body.appendChild(container);
 });
-it("renders with or without a name", () => {
+it("Cards Testing", () => {
   act(() => {
     render(<Cards st={val} />, container);
   });

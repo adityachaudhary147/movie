@@ -22,9 +22,10 @@ afterEach(()=>{
 })
 
 it("renders with or without a name", () => {
+  const st="hello";
     act(() => {
-      render(<SearchButton label={"hello"} />, container);
+      render(<SearchButton label={st} />, container);
     });
-    expect(container.querySelector('.btn-search').textContent).toBe("hello");
+    expect(container.querySelector('.btn-search').textContent).toBe(st);
     
   });

@@ -22,9 +22,10 @@ afterEach(()=>{
 })
 
 it("renders with or without a name", () => {
+  const st="movies";
     act(() => {
-      render(<Header />, container);
+      render(<Header label={st} />, container);
     });
-    expect(container.querySelector('.flex-list').textContent).toBe("Movie Data Base Search");
+    expect(container.querySelector('.flex-list').textContent).toBe(st);
     
   });
