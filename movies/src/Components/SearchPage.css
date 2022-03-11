@@ -19,10 +19,13 @@
   margin-bottom: 4px;
 }
 .main-screen {
-  background-color: #4a62d8;
+  background-color: black;
   height: 100%;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-bottom: 140px;
 }
 .search-bar-container,
 .search-bar {
-  background-color: #4a62d8;
+  background-color: black;
 }

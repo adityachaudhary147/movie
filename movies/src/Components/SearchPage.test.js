@@ -4,7 +4,7 @@ import nock from "nock";
 import { render, unmountComponentAtNode } from "react-dom";
 import { act, fireEvent } from "react-dom/test-utils";
 import userEvent from "@testing-library/user-event";
-
+import { waitFor } from '@testing-library/react';
 import SearchPage from "./SearchPage";
 const val = [
   {
@@ -62,8 +62,15 @@ it("Testing for Search Page Test ", async () => {
   const button = document.querySelector("button");
   await act(async () => {
     userEvent.click(button);
+    console.log(container.querySelector(".main-screen").textContent);
+    await waitFor(() => expect(container.querySelector(".main-screen").textContent=="").toBe(false));
+    console.log(container.querySelector(".main-screen").textContent);
+    await waitFor(() => expect(container.querySelector(".main-screen").textContent=="loading").toBe(false));  
+    console.log(container.querySelector(".main-screen").textContent);
+    await waitFor(() => expect(container.querySelector(".main-screen").textContent=="").toBe(false));  
+    console.log(container.querySelector(".main-screen").textContent);
   });
-  await new Promise((r) => setTimeout(r, 2000));
+  
   console.log(container.outerHTML);
   expect(container.querySelector(".linkimdb").textContent).toBe("Link to IMDB");
   //"It means Card is imported correctly

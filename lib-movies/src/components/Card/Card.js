@@ -23,30 +23,27 @@ export default function Card({ obj }) {
   return (
     <div className="container">
       <div
-        className={cc ? ` card` : " upside card"}
+        className={cc ? ` card` : " card"}
         onMouseEnter={handleClick}
         onMouseLeave={handleClick}
       >
         <div>
-          <img className="poster" src={obj.Poster} />
+          <img className={cc ? `  poster` : "   poster-hover poster "} src={obj.Poster} />
         </div>
-        <div>
-          <div className={cc ? ` info` : "info "}>
-            <h1>{obj.Title}</h1>
+          <div className={cc ? ` upside info` : "  info "}>
+            <p>{obj.Title}</p>
             <h3></h3>
-            <h3>Type: {convertType(obj.Type)}</h3>
-
+            <h5>Type: {convertType(obj.Type)}</h5>
             <div>
-              <h4>Year: {obj.Year} </h4>
-              <a
-                className="linkimdb"
-                href={`https://www.imdb.com/title/${obj.imdbID}`}
+              <h5>Year: {obj.Year} </h5>
+              <button
+                className="btn-imdb"
               >
-                Link to IMDB
-              </a>
+                <a  className="linkimdb" href={`https://www.imdb.com/title/${obj.imdbID}`} >Link to IMDB</a>
+                </button>
+                
             </div>
           </div>
-        </div>
       </div>
     </div>
   );

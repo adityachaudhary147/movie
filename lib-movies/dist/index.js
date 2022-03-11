@@ -35,7 +35,7 @@ function styleInject(css, ref) {
   }
 }
 
-var css_248z$2 = ".btn-search{background-color:#000;border-radius:3px;color:#f5f5f5;font-size:medium;height:auto;padding:6px}";
+var css_248z$2 = ".btn-search{background-color:red;border-radius:3px;color:#f5f5f5;font-size:medium;height:auto;padding:6px}";
 styleInject(css_248z$2);
 
 function createCommonjsModule(fn, module) {
@@ -1191,7 +1191,7 @@ SearchButton.propTypes = {
   label: PropTypes.string
 };
 
-var css_248z$1 = ".head{background-color:#000;color:#f5f5f5;font-size:large;font-weight:900;height:54px}.flex-list{align-items:center;display:flex;height:30px;justify-content:space-between;list-style:none;padding-top:13px;text-decoration:none}";
+var css_248z$1 = ".head{background-color:red;color:#f5f5f5;font-size:large;font-weight:900;height:54px}.flex-list{align-items:center;display:flex;height:30px;justify-content:space-between;list-style:none;padding-top:13px;text-decoration:none}";
 styleInject(css_248z$1);
 
 function Header(_ref) {
@@ -1268,7 +1268,7 @@ function _nonIterableRest() {
   throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
 }
 
-var css_248z = ".card{align-items:center;background-color:#4b4b4b;border:3px solid #ff565a;border-radius:15px;color:#f5f5f5;display:flex;height:auto;justify-content:space-around;padding:15px;position:relative;transition:transform .5s}.poster{width:100%}.hidden{display:none}.info{position:relative}.container{margin:15px auto auto;width:70%}.card:hover{transform:scale(1.2);z-index:1}.linkimdb{color:#008488;text-decoration:none}.lingimdb :hover{color:#008488;cursor:pointer}.linkimdb :active,.linkimdb :visited{color:#008488}";
+var css_248z = ".card{align-items:center;border-radius:15px;color:#f5f5f5;display:flex;height:auto;transition:transform .5s}.poster{object-fit:contain;width:120px}.poster-hover{opacity:.5;transform:scale(1.2);z-index:1}.hidden{display:none}.info{position:absolute}.container{margin:15px auto auto;width:100%}.poster:hover{transform:scale(1.2);z-index:1}.linkimdb{color:#000;text-decoration:none}.lingimdb :hover{color:#000;cursor:pointer}.linkimdb :active,.linkimdb :visited{color:#000}.btn-imdb{background-color:#ff0}.upside{display:none}.info{margin-left:0;width:120px}";
 styleInject(css_248z);
 
 function Card(_ref) {
@@ -1303,15 +1303,17 @@ function Card(_ref) {
   return /*#__PURE__*/React__default["default"].createElement("div", {
     className: "container"
   }, /*#__PURE__*/React__default["default"].createElement("div", {
-    className: cc ? " card" : " upside card",
+    className: cc ? " card" : " card",
     onMouseEnter: handleClick,
     onMouseLeave: handleClick
   }, /*#__PURE__*/React__default["default"].createElement("div", null, /*#__PURE__*/React__default["default"].createElement("img", {
-    className: "poster",
+    className: cc ? "  poster" : "   poster-hover poster ",
     src: obj.Poster
-  })), /*#__PURE__*/React__default["default"].createElement("div", null, /*#__PURE__*/React__default["default"].createElement("div", {
-    className: cc ? " info" : "info "
-  }, /*#__PURE__*/React__default["default"].createElement("h1", null, obj.Title), /*#__PURE__*/React__default["default"].createElement("h3", null), /*#__PURE__*/React__default["default"].createElement("h3", null, "Type: ", convertType(obj.Type)), /*#__PURE__*/React__default["default"].createElement("div", null, /*#__PURE__*/React__default["default"].createElement("h4", null, "Year: ", obj.Year, " "), /*#__PURE__*/React__default["default"].createElement("a", {
+  })), /*#__PURE__*/React__default["default"].createElement("div", {
+    className: cc ? " upside info" : "  info "
+  }, /*#__PURE__*/React__default["default"].createElement("p", null, obj.Title), /*#__PURE__*/React__default["default"].createElement("h3", null), /*#__PURE__*/React__default["default"].createElement("h5", null, "Type: ", convertType(obj.Type)), /*#__PURE__*/React__default["default"].createElement("div", null, /*#__PURE__*/React__default["default"].createElement("h5", null, "Year: ", obj.Year, " "), /*#__PURE__*/React__default["default"].createElement("button", {
+    className: "btn-imdb"
+  }, /*#__PURE__*/React__default["default"].createElement("a", {
     className: "linkimdb",
     href: "https://www.imdb.com/title/".concat(obj.imdbID)
   }, "Link to IMDB"))))));

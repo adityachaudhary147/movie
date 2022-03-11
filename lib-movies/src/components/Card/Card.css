@@ -2,50 +2,69 @@
 .card{
     height: auto;
     display: flex;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     align-items: center;
-    padding: 15px;
-    position: relative;
-    border: 3px solid #ff565A;
-    background-color: #4B4B4B;
+    /* padding: 15px; */
+    /* position: relative; */
+    /* border: 3px solid grey;
+    background-color: black; */
     border-radius: 15px;
     color:whitesmoke;
     transition: transform 500ms;
 
 }
 .poster{
-    width: 100%;
+    width: 120px;
     /* margin: auto; */
+    object-fit: contain;
+    
+
 }
+.poster-hover{
+    opacity: 0.5;
+    transform: scale(1.2);
+  z-index: 1;
+}
+
 .hidden{
     display: none;
 }
 .info{
-    position:relative;
+    position:absolute;
 }
 .container{
-    width: 70%;
+    width: 100%;
     margin: auto;
     margin-top: 15px;
     
 }
-.card:hover {
+.poster:hover {
     transform: scale(1.2);
   z-index: 1;
    
 }
 .linkimdb{
-    color: #008488;
-
+    color: black;
 text-decoration: none;
 }
 .lingimdb :hover{
-    color: #008488;
+    color: black;
     cursor: pointer;
 }
 .linkimdb :active{
-    color: #008488;
+    color: black;
 }
 .linkimdb :visited{
-    color: #008488;
+    color: black;
 }
+.btn-imdb{
+    background-color: yellow;
+
+}
+.upside{
+    display: none;
+}
+.info{
+    margin-left: 0px;
+    width: 120px;
+  }

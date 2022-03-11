@@ -3,13 +3,17 @@
   font-family:sans-serif;
 }
 
+
 .flex-cards{
   display: grid;
-  grid-template-columns: 1fr ;
+  /* grid-template-columns: 1fr 1fr 1fr ; */
+  grid-template-columns: repeat( auto-fit, minmax(120px, 1fr) );;
+  gap: 2px 10px;
   
-  justify-content: center;
-  align-content: center;
+  /* justify-content: center;
+  align-content: center; */
 }
+
 body{
   background-color: #282828;
 }
