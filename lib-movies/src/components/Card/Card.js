@@ -31,7 +31,7 @@ export default function Card({ obj }) {
           <img className={cc ? `  poster` : "   poster-hover poster "} src={obj.Poster} />
         </div>
           <div className={cc ? ` upside info` : "  info "}>
-            <p>{obj.Title}</p>
+            <p id="title">{obj.Title}</p>
             <h3></h3>
             <h5>Type: {convertType(obj.Type)}</h5>
             <div>
@@ -39,7 +39,7 @@ export default function Card({ obj }) {
               <button
                 className="btn-imdb"
               >
-                <a  className="linkimdb" href={`https://www.imdb.com/title/${obj.imdbID}`} >Link to IMDB</a>
+                <a id="linkimdb" className="linkimdb" href={`https://www.imdb.com/title/${obj.imdbID}`} >Link to IMDB</a>
                 </button>
                 
             </div>

@@ -31,6 +31,6 @@ it("renders with or without a name", () => {
     });
     expect(container.querySelector('.linkimdb').textContent).toBe("Link to IMDB");
     //"It means Card is imported correctly 
-    expect(container.querySelector('.info').querySelector('h1').textContent).toBe(val.Title);  
+    expect(container.querySelector('.info').querySelector('p').textContent).toBe(val.Title);  
     
   });
